@@ -1,0 +1,47 @@
+{
+    "name": "webduonederland/laravel-image-resizer",
+    "description": "A Laravel package to resize images.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Finn Paes",
+            "email": "finn@webduo.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "intervention/image": "^2.7",
+        "intervention/imagecache": "^2.5",
+        "laravel/framework": "^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebduoNederland\\LaravelImageResizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebduoNederland\\LaravelImageResizer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebduoNederland\\LaravelImageResizer\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
